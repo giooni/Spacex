@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #5F6472;
+   
+}
+header{
+    width: 100%;
+    overflow: hidden;
+}
+main{
+    display: flex;
+}
+nav{
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    height: 60px;
+    
+    
+}
+
+
+#search{
+    
+    display: none;
+    width: 335px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    text-transform: capitalize;
+    
+}
+#search::placeholder{
+    font-family: "FontAwesome";
+}
+
+#bar{
+    
+    display: none;
+
+}
+#navigation{
+    margin-left: 20px;
+    width: 200px;
+    height: 60px;
+
+    background-image:url(../img/Symbol-SpaceX.svg);
+    background-position-y: -30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+#space{
+    margin-left: 100000px;
+}
+li{
+    cursor: pointer;
+    color: #979797;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 100%;
+    font-weight: 200;
+}
+#markets{
+    width: 220px;
+    margin-top: 20px;
+    padding: 20px;
+}
+h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: #979797;
+}
+#list{
+
+    height: 400px;
+    overflow-y: scroll;
+    
+
+}
+#list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+#list::-webkit-scrollbar-thumb {
+    background-color: #323232;
+    border-radius: 4px;
+  }
+  
+  #list::-webkit-scrollbar-track {
+    background-color:rgba(151, 151, 151, 1)
+  }
+  
+
+
+
+li:hover{
+    background:linear-gradient(#2D3038 0%, rgba(45,48,56,0) 100%);
+    color: white;
+     ;
+}
+
+div{
+    width: 1036px;
+    height: 850px;
+    padding: 30px;
+    margin:30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(124.01deg , #2D3038 0%, rgba(45,48,56,0) 100%);
+    
+    display: none;
+}
+
+#name{
+    font-size: 64px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+#mail{
+    font-size: 16px;
+    color: rgba(151, 151, 151, 1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.cargo{
+    margin-top: 30px;
+    font-size: 24px;
+    color: rgba(151, 151, 151, 1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+#boxnum{
+    width: 320px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.result{
+    font-size: 34px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+    color: rgba(151, 151, 151, 1);
+}
+#barmenu{
+    width: 100%;
+    display: none;
+    height: 500px;
+}
+#x{
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+#res{
+    color: white;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        height: 100px;
+    }
+    main{
+        flex-wrap: wrap;
+    }
+    nav{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    #bar{
+        
+        display: block;
+        color: white;
+        font-size: 30px;
+       
+    }
+    #search{
+        display: block;
+        margin: 20px auto;
+    }
+   #markets{
+    display: none;
+    width: 100%;
+    
+    margin-top: 20px;
+    padding: 20px;
+   }
+    div{
+        width: 335px;
+        padding: 10px;
+        height: 634px;
+    }
+    #name{
+        font-size: 28px;
+    }
+    #boxnum{
+        width: 305px;
+    }
+    .result{
+        font-size: 18px;
+    }
+    #res{
+        color: white;
+        font-size: 24px;
+        margin: 10px auto;
+
+    }
+    
+  }
